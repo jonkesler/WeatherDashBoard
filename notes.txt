@@ -1,0 +1,15 @@
+Weather app
+
+Use weather api
+
+Use local storage to keep list of searched city's
+Able to click on searched city and bring up weather
+
+use this example to capture city search and add it to the list.
+14-DynamicElements/Solved/button-triggered-ajax-solution.html
+
+this example to get weather data
+05-Bujumbura-Unsolved/Unsolved/bujumbura-easier.html
+
+this example to do styling and use a search button.
+16-NYTSearch/Solved/NYTArticleSearch_Best_Solution/nyt-example.html

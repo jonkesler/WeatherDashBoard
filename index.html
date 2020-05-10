@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <!-- Bootstrap CSS CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" src=./style.css />
+
+</head>
+
+<body>
+
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron bg-primary text-white">
+      <h1 class="text-center">
+        <strong>
+          <i class="fa fa-cloud" aria-hidden="true"></i> Weather Dashboard</strong>
+      </h1>
+    </div>
+
+    <!-- Row for Searching New City -->
+    <div class="row">
+      <div class="col-sm-4">
+        <br>
+        <!-- First card is for handling the search parameters -->
+        <div class="card">
+
+          <div class="card-body">
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+                <!-- <label for="search">Search Term:</label> -->
+                <label for="city">Search for a City:</label>
+                <input type="text" class="form-control" id="search-city" placeholder="Enter your city here" /> 
+                <button type="submit" class="btn btn-default" id="run-search">
+                  <i class="fa fa-search"></i> </button> 
+              </div>
+            </form>
+          </div>
+        </div>
+              <!-- Recent Searches -->
+        <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
+        <div class="card">
+          <!-- This main card will hold each of the resulting articles -->
+          <div class="card-body" id="pastSearches">
+            <ul id="search-list" class="list-group list-group-flush">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search results column -->
+      <!-- This row will handle all of the retrieved Data -->
+      <div class="col-sm-8">
+        <br>
+        <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
+        <div class="card text-white bg-primary mb-3" style="height: 250px;">
+          <!-- This main card will hold each of the resulting articles -->
+          <div class="card-body" id="article-section">
+            <div class="city"><H1>Enter any City </H1> </div>
+            <div class="tempF"> </div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+            <div class="temp"></div>
+          </div>
+          
+        </div>
+        5 day
+      </div>
+
+
+    <!-- Footer Region -->
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Line Break followed by closing -->
+        <hr>
+        <h5 class="text-center">
+          <!-- insert footer here -->
+          Weather Dashboard
+        </h5>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Code to the JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
